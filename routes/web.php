@@ -10,6 +10,6 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Route::view('/','welcome');
 Route::post('statuses','StatusesController@store')->name('statuses.store')->middleware('auth');
 Route::auth();
